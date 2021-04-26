@@ -16,7 +16,7 @@ import Navbar from "./components/Navbar";
 import Skills from "./components/home/Skills";
 // import { Blog } from "./components/blog/Blog";
 // import BlogPost from "./components/blog/BlogPost";
-import GetInTouch from "./components/home/GetInTouch.jsx";
+import QuoteCard from "./components/home/QuoteCard.jsx";
 
 
 import Experience from "./components/home/Experience";
@@ -75,7 +75,7 @@ function App() {
     {/* {false && <Route path="/blog" exact component={Blog} />}
     {false && <Route path="/blog/:id" component={BlogPost} />} */}
     <Footer>
-    
+    <QuoteCard/>
     </Footer>
   </BrowserRouter>
 
