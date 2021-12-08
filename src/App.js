@@ -3,13 +3,12 @@ import { BrowserRouter, Route } from "react-router-dom";
 import {
   navBar,
   mainBody,
-  about,
   repos,
   skills,
   experiences
 } from "./editable-stuff/config.js";
 import MainBody from "./components/home/MainBody";
-import AboutMe from "./components/home/AboutMe";
+
 import Project from "./components/home/Project";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
@@ -31,15 +30,7 @@ const Home = React.forwardRef((props, ref) => {
         icons={mainBody.icons}
         ref={ref}
       />
-      {about.show && (
-        <AboutMe
-          heading={about.heading}
-          message={about.message}
-          imageLink={about.imageLink}
-          imgSize={about.imageSize}
-          resume={about.resume}
-        />
-      )}
+
       {
         experiences.show && (
           <Experience experiences={experiences}/>
